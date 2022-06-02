@@ -1,6 +1,5 @@
 const polka = require('polka');
 const bodyParser = require('body-parser')
-const JSON2 = require('JSON2');
 //const multer  = require('multer')
 //const upload = multer()
 //upload.array()
@@ -74,7 +73,7 @@ polka()
         }
 
         res.writeHead(200, { 'Content-Type': 'application/json;charset=utf-8' });
-        res.end(JSON2.stringify(output));
+        res.end(JSON.stringify(output));
     })
     .listen(8888, () => {
         console.log(`> Running on localhost:8888`);
