@@ -12,11 +12,16 @@ GIS 中心小品，測試 100w 筆csv用http post匯入並查詢
 3、啟動服務
 
     node server.js
+
+	或安裝 npm install nodemon -g
+
+	nodemon server.js
     
 4、Server 會跑 127.0.0.1 , Port : 8888
 
 5、測試服務
 <ul>
-<li>/API/Default/AddBrowseLog   (POST 注意，需使用 multipart/form-data)</li>
-<li>/API/Default/GetBrowseLog   (POST x-www-form-urlencoded) </li>
+	<li><s>/API/Default/AddBrowseLog   (POST 注意，需使用 multipart/form-data)</s></li>
+	<li>/API/Default/AddBrowseLog   (POST x-www-form-urlencoded)</li>
+	<li>/API/Default/GetBrowseLog   (POST x-www-form-urlencoded) </li>
 </ul>        
